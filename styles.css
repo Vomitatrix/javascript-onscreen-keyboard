@@ -1,5 +1,9 @@
 /* {border: 1px red solid;}*/
 
+* {
+    user-select: none;
+}
+
 body {
     font-size: 35px;
     height: 100vh;
@@ -29,6 +33,12 @@ body {
     margin: 5px;
     border-radius: 7px;
     background-color: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.shiftkey {
+    font-size: 20px;
 }
 
 .spacebar > div {
