@@ -16,9 +16,28 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: auto;
+}
+
+.typing-area {
+    margin: 25px;
+    color: #ddd;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    border: 3px solid #ddd;
+    border-radius: 7px;
+    min-height: 1em;
+    width: 800px;
+    padding: 5px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -40,8 +59,10 @@ body {
 .shiftkey {
     font-size: 20px;
 }
-
-.spacebar > div {
+.spacebar {
+    display: flex;
+}
+.sb {
     width: 10em;
 }
 
