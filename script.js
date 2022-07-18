@@ -45,7 +45,7 @@ function typing(e) {
         text = text.slice(0, -1)
     } else {
         if (kc === 13) { // enter
-            input = '\n ';
+            input = '\n';
         } else if (kc === 16) { // shift
             input = '';
         } else if (kc === 32) { // space
