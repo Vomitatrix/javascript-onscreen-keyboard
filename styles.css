@@ -58,8 +58,7 @@ body {
 }
 
 .shiftkey {
-    font-size: 20px;
-    color: #999;
+    font-size: 15px;
 }
 
 .low {
@@ -82,11 +81,9 @@ body {
 }
 
 .shift-symbol {
-    font-size: 20px;
-    color: #999;
+    font-size: 15px;
 }
 
 .shift-shiftkey {
     font-size: 35px;
-    color: black;
 }
