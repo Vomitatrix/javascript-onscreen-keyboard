@@ -59,11 +59,14 @@ body {
 
 .shiftkey {
     font-size: 20px;
+    color: #999;
 }
-.spacebar {
+
+.low {
     display: flex;
 }
-.sb {
+
+.spacebar {
     width: 10em;
 }
 
@@ -72,4 +75,18 @@ body {
     color: #ddd;
     transform: scale(1.1);
     border-color: #ddd;
+}
+
+.shift-letter {
+    text-transform: capitalize;
+}
+
+.shift-symbol {
+    font-size: 20px;
+    color: #999;
+}
+
+.shift-shiftkey {
+    font-size: 35px;
+    color: black;
 }
