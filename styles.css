@@ -28,9 +28,10 @@ body {
     hyphens: auto;
     border: 3px solid #ddd;
     border-radius: 7px;
-    min-height: 1em;
+    min-height: 1.15em;
     width: 800px;
     padding: 5px;
+    white-space: pre-wrap;
 }
 
 .keyboard {
