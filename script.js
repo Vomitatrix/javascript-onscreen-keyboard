@@ -43,6 +43,3 @@ enter 13
 shift 16
 space 32
 */
-
-let asdf = 'asdf';
-const INCH = 0.0254;
