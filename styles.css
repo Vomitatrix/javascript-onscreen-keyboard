@@ -1,6 +1,5 @@
-/* {border: 1px red solid;}*/
-
 * {
+    /* border: 1px red solid; */
     user-select: none;
 }
 
@@ -32,6 +31,8 @@ body {
     width: 800px;
     padding: 5px;
     white-space: pre-wrap;
+    text-shadow: -0.025em -0.025em 0.1em rgba(255, 255, 255, 0.3),
+        0.025em 0.025em 0.1em rgba(0, 0, 0, 0.3);
 }
 
 .keyboard {
@@ -48,11 +49,14 @@ body {
 }
 
 .key {
-    border: 3px solid black;
+    /* box-shadow: 0 0 0.1em 0.1em #ddd, 0 0 0.2em 0.2em #ccc inset; */
+    box-shadow: -0.12em -0.12em 0.16em 0.05em rgba(0, 0, 0, 0.3) inset,
+        0.12em 0.12em 0.16em 0.05em rgba(255, 255, 255, 0.3) inset;
+    text-shadow: -0.025em -0.025em 0.1em white, 0.025em 0.025em 0.1em black;
     padding: 10px;
-    margin: 5px;
-    border-radius: 7px;
-    background-color: #ddd;
+    margin: 0.3em;
+    border-radius: 0.25em;
+    background-color: #888;
     display: flex;
     justify-content: center;
 }
@@ -70,10 +74,10 @@ body {
 }
 
 .pressed {
-    background: #444;
+    box-shadow: 0.21em 0.21em 0.28em 0 rgba(0, 0, 0, 0.3) inset,
+        -0.21em -0.21em 0.28em 0 rgba(255, 255, 255, 0.3) inset;
+    background: #555;
     color: #ddd;
-    transform: scale(1.1);
-    border-color: #ddd;
 }
 
 .shift-letter {
