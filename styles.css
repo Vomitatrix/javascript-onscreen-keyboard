@@ -3,13 +3,24 @@
     user-select: none;
 }
 
+:root {
+    --text-shadows: -0.025em -0.025em 0.1em rgba(255, 255, 255, 0.3),
+        0.025em 0.025em 0.1em rgba(0, 0, 0, 0.3);
+    --box-shadows-default: -0.12em -0.12em 0.16em 0.05em rgba(0, 0, 0, 0.3) inset,
+        0.12em 0.12em 0.16em 0.05em rgba(255, 255, 255, 0.3) inset;
+    --box-shadows-pressed: 0.21em 0.21em 0.28em 0 rgba(0, 0, 0, 0.3) inset,
+        -0.21em -0.21em 0.28em 0 rgba(255, 255, 255, 0.3) inset;
+}
+
 body {
+    font-family: monospace;
     font-size: 35px;
     height: 100vh;
     margin: 0;
     display: flex;
-    background-color: #222;
+    background-color: #252220;
     text-align: center;
+    color: #1a1a1a;
 }
 
 .container {
@@ -31,8 +42,7 @@ body {
     width: 800px;
     padding: 5px;
     white-space: pre-wrap;
-    text-shadow: -0.025em -0.025em 0.1em rgba(255, 255, 255, 0.3),
-        0.025em 0.025em 0.1em rgba(0, 0, 0, 0.3);
+    text-shadow: var(--text-shadows);
 }
 
 .keyboard {
@@ -42,31 +52,24 @@ body {
     align-items: center;
 }
 
-.row {
+div {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 
 .key {
-    /* box-shadow: 0 0 0.1em 0.1em #ddd, 0 0 0.2em 0.2em #ccc inset; */
-    box-shadow: -0.12em -0.12em 0.16em 0.05em rgba(0, 0, 0, 0.3) inset,
-        0.12em 0.12em 0.16em 0.05em rgba(255, 255, 255, 0.3) inset;
-    text-shadow: -0.025em -0.025em 0.1em white, 0.025em 0.025em 0.1em black;
+    box-shadow: var(--box-shadows-default);
+    text-shadow: var(--text-shadows);
     padding: 10px;
     margin: 0.3em;
     border-radius: 0.25em;
-    background-color: #888;
-    display: flex;
-    justify-content: center;
+    background-color: #858280;
 }
 
-.shiftkey {
+.symbol-secondary {
     font-size: 15px;
-}
-
-.low {
-    display: flex;
+    opacity: 0.5;
 }
 
 .spacebar {
@@ -74,20 +77,21 @@ body {
 }
 
 .pressed {
-    box-shadow: 0.21em 0.21em 0.28em 0 rgba(0, 0, 0, 0.3) inset,
-        -0.21em -0.21em 0.28em 0 rgba(255, 255, 255, 0.3) inset;
+    box-shadow: var(--box-shadows-pressed);
     background: #555;
     color: #ddd;
 }
 
-.shift-letter {
+.shift-on {
     text-transform: capitalize;
 }
 
-.shift-symbol {
+.shift-symbol-main {
     font-size: 15px;
+    opacity: 0.5;
 }
 
-.shift-shiftkey {
+.shift-symbol-secondary {
     font-size: 35px;
+    opacity: 1;
 }

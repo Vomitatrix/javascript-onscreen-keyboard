@@ -1,203 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
         <title>Typewriter</title>
     </head>
     <body>
-        <div class="container">
-            <div class="typing-area"></div>
-            <div class="keyboard">
-                <div class="row numbers">
+        <main class="container">
+            <section class="typing-area"></section>
+            <section class="keyboard">
+                <div class="row row-numbers">
                     <div data-key="192" class="key">
-                        <kbd class="symbol">`</kbd>
-                        <kbd class="shiftkey">~</kbd>
+                        <span class="symbol-main">`</span>
+                        <span class="symbol-secondary">~</span>
                     </div>
                     <div data-key="49" class="key">
-                        <kbd class="symbol">1</kbd>
-                        <kbd class="shiftkey">!</kbd>
+                        <span class="symbol-main">1</span>
+                        <span class="symbol-secondary">!</span>
                     </div>
                     <div data-key="50" class="key">
-                        <kbd class="symbol">2</kbd>
-                        <kbd class="shiftkey">@</kbd>
+                        <span class="symbol-main">2</span>
+                        <span class="symbol-secondary">@</span>
                     </div>
                     <div data-key="51" class="key">
-                        <kbd class="symbol">3</kbd>
-                        <kbd class="shiftkey">#</kbd>
+                        <span class="symbol-main">3</span>
+                        <span class="symbol-secondary">#</span>
                     </div>
                     <div data-key="52" class="key">
-                        <kbd class="symbol">4</kbd>
-                        <kbd class="shiftkey">$</kbd>
+                        <span class="symbol-main">4</span>
+                        <span class="symbol-secondary">$</span>
                     </div>
                     <div data-key="53" class="key">
-                        <kbd class="symbol">5</kbd>
-                        <kbd class="shiftkey">%</kbd>
+                        <span class="symbol-main">5</span>
+                        <span class="symbol-secondary">%</span>
                     </div>
                     <div data-key="54" class="key">
-                        <kbd class="symbol">6</kbd>
-                        <kbd class="shiftkey">^</kbd>
+                        <span class="symbol-main">6</span>
+                        <span class="symbol-secondary">^</span>
                     </div>
                     <div data-key="55" class="key">
-                        <kbd class="symbol">7</kbd>
-                        <kbd class="shiftkey">&</kbd>
+                        <span class="symbol-main">7</span>
+                        <span class="symbol-secondary">&</span>
                     </div>
                     <div data-key="56" class="key">
-                        <kbd class="symbol">8</kbd>
-                        <kbd class="shiftkey">*</kbd>
+                        <span class="symbol-main">8</span>
+                        <span class="symbol-secondary">*</span>
                     </div>
                     <div data-key="57" class="key">
-                        <kbd class="symbol">9</kbd>
-                        <kbd class="shiftkey">(</kbd>
+                        <span class="symbol-main">9</span>
+                        <span class="symbol-secondary">(</span>
                     </div>
                     <div data-key="48" class="key">
-                        <kbd class="symbol">0</kbd>
-                        <kbd class="shiftkey">)</kbd>
+                        <span class="symbol-main">0</span>
+                        <span class="symbol-secondary">)</span>
                     </div>
                     <div data-key="189" class="key">
-                        <kbd class="symbol">-</kbd>
-                        <kbd class="shiftkey">_</kbd>
+                        <span class="symbol-main">-</span>
+                        <span class="symbol-secondary">_</span>
                     </div>
                     <div data-key="187" class="key">
-                        <kbd class="symbol">=</kbd>
-                        <kbd class="shiftkey">+</kbd>
+                        <span class="symbol-main">=</span>
+                        <span class="symbol-secondary">+</span>
                     </div>
                 </div>
-                <div class="row one">
-                    <div data-key="81" class="key">
-                        <kbd class="letter">q</kbd>
-                    </div>
-                    <div data-key="87" class="key">
-                        <kbd class="letter">w</kbd>
-                    </div>
-                    <div data-key="69" class="key">
-                        <kbd class="letter">e</kbd>
-                    </div>
-                    <div data-key="82" class="key">
-                        <kbd class="letter">r</kbd>
-                    </div>
-                    <div data-key="84" class="key">
-                        <kbd class="letter">t</kbd>
-                    </div>
-                    <div data-key="89" class="key">
-                        <kbd class="letter">y</kbd>
-                    </div>
-                    <div data-key="85" class="key">
-                        <kbd class="letter">u</kbd>
-                    </div>
-                    <div data-key="73" class="key">
-                        <kbd class="letter">i</kbd>
-                    </div>
-                    <div data-key="79" class="key">
-                        <kbd class="letter">o</kbd>
-                    </div>
-                    <div data-key="80" class="key">
-                        <kbd class="letter">p</kbd>
-                    </div>
+                <div class="row row-letters row-letters--first">
+                    <div data-key="81" class="key">q</div>
+                    <div data-key="87" class="key">w</div>
+                    <div data-key="69" class="key">e</div>
+                    <div data-key="82" class="key">r</div>
+                    <div data-key="84" class="key">t</div>
+                    <div data-key="89" class="key">y</div>
+                    <div data-key="85" class="key">u</div>
+                    <div data-key="73" class="key">i</div>
+                    <div data-key="79" class="key">o</div>
+                    <div data-key="80" class="key">p</div>
                     <div data-key="219" class="key">
-                        <kbd class="symbol">[</kbd>
-                        <kbd class="shiftkey">{</kbd>
+                        <span class="symbol-main">[</span>
+                        <span class="symbol-secondary">{</span>
                     </div>
                     <div data-key="221" class="key">
-                        <kbd class="symbol">]</kbd>
-                        <kbd class="shiftkey">}</kbd>
+                        <span class="symbol-main">]</span>
+                        <span class="symbol-secondary">}</span>
                     </div>
-                    <div data-key="220" class="key" style="width: 2.5em;">
-                        <kbd class="symbol">\</kbd>
-                        <kbd class="shiftkey">|</kbd>
+                    <div data-key="220" class="key" style="width: 2.5em">
+                        <span class="symbol-main">\</span>
+                        <span class="symbol-secondary">|</span>
                     </div>
                 </div>
-                <div class="row two">
-                    <div data-key="65" class="key">
-                        <kbd class="letter">a</kbd>
-                    </div>
-                    <div data-key="83" class="key">
-                        <kbd class="letter">s</kbd>
-                    </div>
-                    <div data-key="68" class="key">
-                        <kbd class="letter">d</kbd>
-                    </div>
-                    <div data-key="70" class="key">
-                        <kbd class="letter">f</kbd>
-                    </div>
-                    <div data-key="71" class="key">
-                        <kbd class="letter">g</kbd>
-                    </div>
-                    <div data-key="72" class="key">
-                        <kbd class="letter">h</kbd>
-                    </div>
-                    <div data-key="74" class="key">
-                        <kbd class="letter">j</kbd>
-                    </div>
-                    <div data-key="75" class="key">
-                        <kbd class="letter">k</kbd>
-                    </div>
-                    <div data-key="76" class="key">
-                        <kbd class="letter">l</kbd>
-                    </div>
+                <div class="row row-letters row-letters--second">
+                    <div data-key="65" class="key">a</div>
+                    <div data-key="83" class="key">s</div>
+                    <div data-key="68" class="key">d</div>
+                    <div data-key="70" class="key">f</div>
+                    <div data-key="71" class="key">g</div>
+                    <div data-key="72" class="key">h</div>
+                    <div data-key="74" class="key">j</div>
+                    <div data-key="75" class="key">k</div>
+                    <div data-key="76" class="key">l</div>
                     <div data-key="186" class="key">
-                        <kbd class="symbol">;</kbd>
-                        <kbd class="shiftkey">:</kbd>
+                        <span class="symbol-main">;</span>
+                        <span class="symbol-secondary">:</span>
                     </div>
                     <div data-key="222" class="key">
-                        <kbd class="symbol">'</kbd>
-                        <kbd class="shiftkey">"</kbd>
+                        <span class="symbol-main">'</span>
+                        <span class="symbol-secondary">"</span>
                     </div>
-                    <div data-key="13" class="key">
-                        <kbd>enter</kbd>
-                    </div>
+                    <div data-key="13" class="key key-special">enter</div>
                 </div>
-                <div class="row three">
-                    <div data-key="16" class="key">
-                        <kbd class="upper">shift</kbd>
-                    </div>
-                    <div data-key="90" class="key">
-                        <kbd class="letter">z</kbd>
-                    </div>
-                    <div data-key="88" class="key">
-                        <kbd class="letter">x</kbd>
-                    </div>
-                    <div data-key="67" class="key">
-                        <kbd class="letter">c</kbd>
-                    </div>
-                    <div data-key="86" class="key">
-                        <kbd class="letter">v</kbd>
-                    </div>
-                    <div data-key="66" class="key">
-                        <kbd class="letter">b</kbd>
-                    </div>
-                    <div data-key="78" class="key">
-                        <kbd class="letter">n</kbd>
-                    </div>
-                    <div data-key="77" class="key">
-                        <kbd class="letter">m</kbd>
-                    </div>
+
+                <div class="row row-letters row-letters--third">
+                    <div data-key="16" class="key key-special shift">shift</div>
+                    <div data-key="90" class="key">z</div>
+                    <div data-key="88" class="key">x</div>
+                    <div data-key="67" class="key">c</div>
+                    <div data-key="86" class="key">v</div>
+                    <div data-key="66" class="key">b</div>
+                    <div data-key="78" class="key">n</div>
+                    <div data-key="77" class="key">m</div>
                     <div data-key="188" class="key">
-                        <kbd class="symbol">,</kbd>
-                        <kbd class="shiftkey">&#60</kbd>
+                        <span class="symbol-main">,</span>
+                        <span class="symbol-secondary">&lt;</span>
                     </div>
                     <div data-key="190" class="key">
-                        <kbd class="symbol">.</kbd>
-                        <kbd class="shiftkey">></kbd>
+                        <span class="symbol-main">.</span>
+                        <span class="symbol-secondary">></span>
                     </div>
                     <div data-key="191" class="key">
-                        <kbd class="symbol">/</kbd>
-                        <kbd class="shiftkey">?</kbd>
+                        <span class="symbol-main">/</span>
+                        <span class="symbol-secondary">?</span>
                     </div>
                 </div>
-                <div class="row low">
-                    <div class="key caps">
-                        <kbd>caps</kbd>
-                    </div>
-                    <div data-key="32" class="key spacebar">
-                        <kbd>_</kbd>
-                    </div>
-                    <div data-key="8" class="key backspace">
-                        <kbd>backspace</kbd>
-                    </div>
+                <div class="row row-last">
+                    <div data-key="20" class="key key-special">caps</div>
+                    <div data-key="32" class="key key-special spacebar">_</div>
+                    <div data-key="8" class="key key-special">backspace</div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </body>
-    <script src="script.js"></script>
 </html>
